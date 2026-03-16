@@ -3,7 +3,7 @@ cask "testmesh" do
   name "testmesh"
   desc "E2E integration testing platform — YAML flows over HTTP, DB, Kafka, gRPC and more"
   homepage "https://testmesh.io"
-  version "0.1.6"
+  version "0.1.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "testmesh" do
   on_macos do
     on_intel do
       url "https://github.com/test-mesh/testmesh/releases/download/v#{version}/testmesh_#{version}_macOS_amd64.tar.gz"
-      sha256 "627857c2fd07bd26cb806f67c672bfaac9cdfec42f268e5e19cb3589c98d6620"
+      sha256 "9102098754aacce9baf6e3430190a0747fef1baee037c954fbb7145d3f760794"
     end
     on_arm do
       url "https://github.com/test-mesh/testmesh/releases/download/v#{version}/testmesh_#{version}_macOS_arm64.tar.gz"
-      sha256 "41aaca53a841d596c8cfd7eafa824a1f4bbf03caac6d11142289be9bdbf5279a"
+      sha256 "a6c82ce434a9d0f546e5e4cb991d4d75b384f38a03893bfd1dd988178df53526"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/test-mesh/testmesh/releases/download/v#{version}/testmesh_#{version}_linux_amd64.tar.gz"
-      sha256 "18e35c513cbf7165b507a746786f71449401d883b13e661a7490cd3c1d3a47fa"
+      sha256 "7f0672e4b344bdbe50e376f32079c90172d4222f6edc40dd81226eae45bd93dd"
     end
     on_arm do
       url "https://github.com/test-mesh/testmesh/releases/download/v#{version}/testmesh_#{version}_linux_arm64.tar.gz"
-      sha256 "78ec589f23b29d5f28c360a3efbaa335bf2a44dae343b6b5f2747911c5bd45a8"
+      sha256 "f8868bd4f9f819e2f57280860dbf6e55db4042d29bb09c2251bc07e7718c35a4"
     end
   end
 
