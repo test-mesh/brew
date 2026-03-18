@@ -5,20 +5,20 @@
 class Testmesh < Formula
   desc "E2E integration testing platform — YAML flows over HTTP, DB, Kafka, gRPC and more"
   homepage "https://testmesh.io"
-  version "0.1.9"
+  version "0.1.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.9/testmesh_0.1.9_macOS_amd64.tar.gz"
-      sha256 "550434c877fa0ac5eb478a4274e23dbb8f222f0e7fec4497c203088762d14c11"
+      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.10/testmesh_0.1.10_macOS_amd64.tar.gz"
+      sha256 "059da318930620760b1f775dbbb0599ac2567d3c4874c6dd1247da462fe052d5"
 
       define_method(:install) do
         bin.install "testmesh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.9/testmesh_0.1.9_macOS_arm64.tar.gz"
-      sha256 "0a19b23cd81fd69b0ff4b99f79e67bf26b13bfec6dfa8c25240d77b0c01ba673"
+      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.10/testmesh_0.1.10_macOS_arm64.tar.gz"
+      sha256 "48524cb3ea809e27d9831800b3e3da04ec533a5dd57bcc540b46d825fd86af9a"
 
       define_method(:install) do
         bin.install "testmesh"
@@ -28,15 +28,15 @@ class Testmesh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.9/testmesh_0.1.9_linux_amd64.tar.gz"
-      sha256 "1d1f5588ff112108609f1b950badb3a4efdabbbc137b0d80f273633abbf332a4"
+      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.10/testmesh_0.1.10_linux_amd64.tar.gz"
+      sha256 "a3edb38ac7f95c55db73f4ac597c0df43e3fabe4ca221e1eb594524ba77cb80a"
       define_method(:install) do
         bin.install "testmesh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.9/testmesh_0.1.9_linux_arm64.tar.gz"
-      sha256 "b10a1c16f4a1d7886fbb643a084ee37cbe71471c8e7d12b612153b239c3b8a6f"
+      url "https://github.com/test-mesh/testmesh/releases/download/v0.1.10/testmesh_0.1.10_linux_arm64.tar.gz"
+      sha256 "ead3eba0348bd1293cbb35c730afd2e341552c01b9f450d6e00e72c1c04f69f5"
       define_method(:install) do
         bin.install "testmesh"
       end
